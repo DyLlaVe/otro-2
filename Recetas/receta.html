@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    .topbar{
+        background-color:#ff7043 ;
+        color: aliceblue;
+        text-align: center;
+        padding: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links{
+        background-color: aliceblue;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .nav-links ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 40px;
+    }
+    .nav-links a{
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 18px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    .nav-links a:hover{
+        background-color: #ff7043;
+        color: white;
+    }
+    
+    .contenedor-principal{
+        display: flex;
+        gap: 30px;
+        padding: 40px;
+    }
+    .receta{
+        flex: 3;
+    }
+
+    .imagen{
+        width:100%;
+        max-width: 900px;
+        border-radius: 15px;
+        margin: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card{
+        background-color: white;
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .lista{
+        margin-top: 15px;
+        padding-left: 20px;
+    }
+    .lista li{
+        margin-bottom: 10px;
+    }
+    .sidebar{
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        height: fit-content;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .receta-extra{
+        margin-top: 20px;
+    }
+    .receta-extra img{
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+
+    footer{
+        color: white;
+        background-color: #333;
+        text-align: center;
+        padding: 20px;
+    }
+    footer a{
+        color: #ffb199;
+        text-decoration: none;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <section class="topbar">
+        <h1 id="titulo">Sitio de Recetas</h1>
+    </section>
+    <header class="nav-links">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="receta.html">Receta</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contenedor-principal">
+        <section class="receta">
+            <!-- 
+                <etiqueta atributo="valor" atributo2="valor"></etiqueta>
+            -->
+            <h1 id="inicio">Receta de Brownie</h1>
+            <img class="imagen" src="img/brownie.jpg" alt="Brownie">
+        </section>
+        <section>
+            <article class="card">
+                <h2 id="ingredientes">Ingredientes</h2>
+                <ul class="lista">
+                    <li>Azúcar</li>
+                    <li>Chocolate</li>
+                    <li>Harina</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2>Preparación</h2>
+                <ol class="lista">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nesciunt aliquam velit deserunt quae natus voluptates iusto assumenda voluptate ratione cum illum, porro placeat enim in. Excepturi maxime quis eos?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi totam pariatur quas, quae corporis aspernatur ex, aliquid eum veniam, tenetur sint temporibus modi iste. Ullam ea quos aspernatur animi corporis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nesciunt aliquam velit deserunt quae natus voluptates iusto assumenda voluptate ratione cum illum, porro placeat enim in. Excepturi maxime quis eos?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi totam pariatur quas, quae corporis aspernatur ex, aliquid eum veniam, tenetur sint temporibus modi iste. Ullam ea quos aspernatur animi corporis?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, nesciunt aliquam velit deserunt quae natus voluptates iusto assumenda voluptate ratione cum illum, porro placeat enim in. Excepturi maxime quis eos?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi totam pariatur quas, quae corporis aspernatur ex, aliquid eum veniam, tenetur sint temporibus modi iste. Ullam ea quos aspernatur animi corporis?</li>
+                </ol>
+            </article>
+        </section>
+        <aside class="sidebar">
+            <h3>Otras Recetas</h3>
+            <div class="receta-extra">
+                <h4>Cheese Cake</h4>
+                <img src="img/cheesecake.jpg" alt="Cheescake" width="200">
+            </div>
+            <div class="receta-extra">
+                <h4>Guiso de Mondongo</h4>
+                <img src="img/guiso-mondongo.webp" alt="Guiso Mondongo" width="200">
+            </div>
+            <div class="receta-extra">
+                <h4>Pastel de Papa</h4>
+                <img src="img/pastel-papa.jpg" alt="Pastel de papa" width="200">
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p>@Copyrigth Programación Web I - <a href="https://www.unlam.edu.ar/" target="_blank">Unlam</a> - <a href="#inicio">Ir arriba</a>
+        </p>
+    </footer>
+</body>
+
+</html>
